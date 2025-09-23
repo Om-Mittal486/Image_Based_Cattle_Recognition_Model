@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 210 20% 98% / 0.95;
+    --foreground: 0 0% 0%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 0%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
+
+    --primary: 158 65% 48%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 0 0% 0%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 158 65% 48%;
+    --accent-foreground: 0 0% 0%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 158 65% 48%;
+
+    /* Custom design tokens */
+    --gradient-primary: linear-gradient(135deg, hsl(158 65% 48%), hsl(175 70% 55%));
+    --gradient-subtle: linear-gradient(180deg, hsl(210 20% 98%), hsl(210 30% 96%));
+    --shadow-soft: 0 4px 6px -1px hsl(213 27% 84% / 0.1), 0 2px 4px -1px hsl(213 27% 84% / 0.06);
+    --shadow-medium: 0 10px 15px -3px hsl(213 27% 84% / 0.1), 0 4px 6px -2px hsl(213 27% 84% / 0.05);
+    --shadow-large: 0 20px 25px -5px hsl(213 27% 84% / 0.1), 0 10px 10px -5px hsl(213 27% 84% / 0.04);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --border-dashed: 2px dashed hsl(158 65% 48% / 0.3);
+    
+    /* Background pattern */
+    --pattern-cow: url('/src/assets/cow-icon.png');
+    --pattern-buffalo: url('/src/assets/buffalo-icon.png');
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 213 27% 84%;
+    --foreground: 210 20% 98%;
+
+    --card: 213 27% 84%;
+    --card-foreground: 210 20% 98%;
+
+    --popover: 213 27% 84%;
+    --popover-foreground: 210 20% 98%;
+
+    --primary: 158 65% 48%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 30% 18%;
+    --secondary-foreground: 210 20% 98%;
+
+    --muted: 220 30% 18%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 158 65% 48%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 20% 98%;
+
+    --border: 220 30% 18%;
+    --input: 220 30% 18%;
+    --ring: 158 65% 48%;
+
+    /* Dark mode custom tokens */
+    --gradient-primary: linear-gradient(135deg, hsl(158 65% 48%), hsl(175 70% 55%));
+    --gradient-subtle: linear-gradient(180deg, hsl(213 27% 84%), hsl(220 30% 18%));
+    --shadow-soft: 0 4px 6px -1px hsl(0 0% 0% / 0.1), 0 2px 4px -1px hsl(0 0% 0% / 0.06);
+    --shadow-medium: 0 10px 15px -3px hsl(0 0% 0% / 0.1), 0 4px 6px -2px hsl(0 0% 0% / 0.05);
+    --shadow-large: 0 20px 25px -5px hsl(0 0% 0% / 0.1), 0 10px 10px -5px hsl(0 0% 0% / 0.04);
+    --border-dashed: 2px dashed hsl(158 65% 48% / 0.4);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply text-foreground;
+    position: relative;
+    background-image: 
+      url('/src/assets/cow-icon.png'), 
+      url('/src/assets/buffalo-icon.png');
+    background-size: 100px 100px, 120px 120px;
+    background-position: 0 0, 200px 100px;
+    background-repeat: repeat;
+    background-color: hsl(210 20% 98%);
+  }
+}
