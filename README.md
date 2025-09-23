@@ -1,2 +1,0 @@
-# Image_Based_Cattle_Recognition_Model
-SIH Project
