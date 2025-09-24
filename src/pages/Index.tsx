@@ -91,10 +91,10 @@ const Index = () => {
         <div className="container mx-auto px-4 py-6">
           <div className="text-center">
             <h1 className="text-3xl md:text-4xl font-bold text-card-foreground mb-2">
-              Auto-ATC: Cattle & Buffalo Classification
+              Auto-ATC
             </h1>
             <p className="text-muted-foreground text-lg">
-              Advanced animal type classification using AI-powered analysis
+              AI-powered analysis for cattle and buffalo classification
             </p>
           </div>
         </div>
