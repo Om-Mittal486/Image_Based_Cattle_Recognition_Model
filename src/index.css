@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-image: 
+      url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f1f5f9' fill-opacity='0.15'%3E%3C!-- Cow pattern --%3E%3Cpath d='M15 25c-2.5 0-4.5-2-4.5-4.5S12.5 16 15 16s4.5 2 4.5 4.5S17.5 25 15 25zm0-7c-1.4 0-2.5 1.1-2.5 2.5S13.6 23 15 23s2.5-1.1 2.5-2.5S16.4 18 15 18z'/%3E%3Cpath d='M12 28h6v2h-6zm1 4h4v2h-4zm-1 4h6v2h-6z'/%3E%3C!-- Buffalo pattern --%3E%3Cpath d='M45 25c-2.5 0-4.5-2-4.5-4.5S42.5 16 45 16s4.5 2 4.5 4.5S47.5 25 45 25zm0-7c-1.4 0-2.5 1.1-2.5 2.5S43.6 23 45 23s2.5-1.1 2.5-2.5S46.4 18 45 18z'/%3E%3Cpath d='M42 28h6v2h-6zm1 4h4v2h-4zm-1 4h6v2h-6z'/%3E%3Cpath d='M41 19h2v2h-2zm6 0h2v2h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-size: 120px 120px;
+    background-position: 0 0, 60px 60px;
+    background-repeat: repeat;
+  }
+}
